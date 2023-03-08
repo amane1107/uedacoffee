@@ -51,7 +51,9 @@
 
 .tile_image{
     width: 50%;
+    object-fit: cover;
 }
+
 
 .tile_text{
     display: flex;
@@ -65,6 +67,7 @@
     font-family: "huifont";
     color: brown;
     font-size: 30px;
+    margin-left: 5px;
 }
 
 .honbun{
@@ -86,6 +89,7 @@
  position: relative;
  z-index: 1;
  margin: 0;
+ margin-top: 50px;
  position: absolute;
  left: 50%;
  margin-right: -50%;
@@ -153,6 +157,23 @@
 }
 
 .map_text{
-    text-align: center;
-   
+    text-align: center; 
+}
+
+@media screen and (max-width: 480px) {
+    .title{
+       font-size: 35px;
+       letter-spacing: 10px;
+    }
+    .sumaho_tate{
+        flex-direction: column;
+
+    }
+    .sumaho_tate_text{
+       width: 100%;
+    }
+    .sumaho_tate_image{
+      display: block;
+      margin: 0 auto;
+    }
 }
